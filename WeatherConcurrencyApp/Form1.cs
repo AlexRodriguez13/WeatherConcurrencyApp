@@ -37,7 +37,7 @@ namespace WeatherConcurrencyApp
             }
             catch (Exception)
             {
-                
+                MessageBox.Show("No hay Sistema xd", "error papu :v", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
         }
@@ -45,6 +45,11 @@ namespace WeatherConcurrencyApp
         public async Task Request()
         {
            openWeather = await httpOpenWeatherClient.GetWeatherByCityNameAsync("Managua");
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

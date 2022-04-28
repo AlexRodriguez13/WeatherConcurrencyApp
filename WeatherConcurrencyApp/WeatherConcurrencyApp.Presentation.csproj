@@ -100,6 +100,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Recursos uwu\city.list.json~1\city.list.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WeatherConcurrencyApp.Infrastructure\WeatherConcurrencyApp.Infrastructure.csproj">
@@ -111,8 +112,6 @@
       <Name>WeatherConcurrentApp.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Recursos uwu\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

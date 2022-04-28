@@ -32,12 +32,15 @@ namespace WeatherConcurrencyApp
             this.flpContent = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnOk = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.flpContent.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpContent
             // 
             this.flpContent.AutoScroll = true;
+            this.flpContent.Controls.Add(this.comboBox1);
             this.flpContent.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flpContent.Location = new System.Drawing.Point(0, 79);
             this.flpContent.Name = "flpContent";
@@ -63,6 +66,14 @@ namespace WeatherConcurrencyApp
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -72,6 +83,7 @@ namespace WeatherConcurrencyApp
             this.Controls.Add(this.flpContent);
             this.Name = "FrmMain";
             this.Text = "Weather Async App";
+            this.flpContent.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -82,6 +94,7 @@ namespace WeatherConcurrencyApp
         private System.Windows.Forms.FlowLayoutPanel flpContent;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
